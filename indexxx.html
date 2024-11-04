@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title> Kylasite</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+    <header class="header">
+        <a href="#" class="logo"> Kyla</a>
+
+        <nav class="navbar">    
+
+            <a href="#About">About</a>
+            <a href="mygallery.html">Gallery</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+    </header> 
+
+    <section class="home">
+        <div class="home-content">
+            <h1> Hi, I'm Kyla </h1>
+            <h3>   Currently studying Computer Science</h3>
+            <p>
+                Hello World!<br /> Welcome to my Website, here are some information, pictures and my interest
+                that I would like to share with you.
+            </p> 
+            
+        </div> 
+        <div class="home-img"> <br><br>
+            <img src="myy.jpg" alt="" width="300px" height="400px">
+        </div>
+
+    </section><br><br><br>
+    <section class="about" id="about">
+        <h1 class="heading"> ABOUT ME</h1>
+
+        <div class="about-img">
+            <img src="me.png" alt="">
+            <span class="circle-spin"></span>
+        </div>  
+
+        <div class="about-content">
+        
+            <p>
+                I am <b>Kyla Catherine B. Yalung </b> A First year student from the program
+                Bachelor in Science in Computer Science at AUF.
+            </p>
+        <br> 
+            <table border="1" width="600"> 
+           <tr> 
+            <td align="center"> 
+                <img src="grad.JPG" width="200" height="300">
+              
+                </td>
+
+                  <td> 
+                    <img src="g10.jpg" width="200" height="300">
+                    
+    
+                    </td>
+                  </tr>
+                  
+                </div>
+            </table>
+              </div>
+            <h2> I have knowledge with these Programming Languages: </h2> <br>
+            <ul>
+        
+                <li>HTML5</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li> Java</li>
+                <li>Android Studio</li>
+                <li> C#</li>
+            </ul>
+
+
+        </div>
+
+        </section>
+ 
+        <br /><br /> <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </section>
+    <section class="contact" id="contact">
+        <div id="contact">
+            <ul class="contact-list"> 
+                <li>
+                    <a href="https://facebook.com" target="_blank">
+                        <img src="fbb.png" width="100px" alt="Facebook Icon">
+                    </a>
+                </li> 
+                <li>
+                    <a href="https://mailtoo.com" target="_blank">
+                        <img src="gmail.png" width="80px" alt="Gmail Icon"> 
+                    </a>
+                </li> 
+            </ul>
+        </div>
+    </section>
+    
+
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const aboutLink = document.querySelector('a[href="#About"]');
+            const projectsLink = document.querySelector('a[href="#Project"]');
+            const contactLink = document.querySelector('a[href="#contact"]');
+            const blogLink = document.querySelector('a[href="#blog"]');
+
+            aboutLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            projectsLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            contactLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            blogLink.addEventListener('click', function (event) {
+                event.preventDefault();
+                document.getElementById('blog').scrollIntoView({ behavior: 'smooth' });
+            });
+
+        });
+    </script>
+</body>
+</html>
